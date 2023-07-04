@@ -1,0 +1,150 @@
+.skills .title {
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+}
+.skills {
+    display: grid;
+    margin: 120px 100px 0;
+    grid-template-areas: "container-skills-left container-skills-right";
+    gap: 80px;
+}
+.container-skills-right {
+    display: flex;
+    gap: 150px;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+.container-skills-left {
+    margin-top: -100px;
+}
+.container-skills-left img {
+    margin-left: 20px;
+    margin-top: -50px;
+    width: 500px;
+}
+.title-skills{
+    text-align: center;
+}
+.title-skills span{
+    text-align: center;
+    font-size: 30px;
+    color: #9F6473;
+    text-decoration: underline;
+}
+.list-icons-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.list-icons-skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-technical p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.soft{
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 22px;
+    color: #553539;          
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+    .skills {
+        margin: 120px 100px 0;
+        width: 1200px;
+        gap: 0px;
+    }
+    .skills .title{
+        font-size: 50px;
+    }
+    .container-skills-right{
+        margin-right: -120px;
+        margin-top: 140px;
+    }
+    .container-skills-left img {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .title-skills  span{
+        font-size: 40px;
+        text-align: center;
+    }
+    .list-icons-skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 10px;
+    }
+    .icons-technical p {
+        font-size: 20px;
+    }
+    .icons-technical i {
+        font-size: 40px;
+    }
+    .soft{      
+        font-size: 20px;
+    }
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+    .skills {
+        margin: 120px 50px 0;
+        display: flex;
+        flex-direction: column;
+        width: 1300px;
+    }
+    .skills .title{
+        font-size: 90px;
+    }
+    .container-skills-left img {
+        width: 100%;
+        margin-bottom: -200px;
+    }
+    .container-skills-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-skills span {
+        
+        font-size: 60px;
+        text-align: center;
+    }
+    .list-icons-skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+    }
+    .icons-technical p {
+        font-size: 50px;
+    }
+    .icons-technical i {
+        font-size: 90px;
+    }
+    .soft{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px ;     
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;       
+    }
+}

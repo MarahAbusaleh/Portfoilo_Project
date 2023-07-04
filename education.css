@@ -1,0 +1,130 @@
+/* ----------page container-education---------- */
+.education {
+    margin: 0 100px 0;
+    padding: 120px 0 0;
+  }
+  
+  .title-education {
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+  .university{
+    width: 1330px;
+    margin-left: 50px;
+  }
+  
+  .name-university {
+    font-size: 25px;
+    color: #553539;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+
+  .path-university1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8A606A;
+  }
+  
+  .description-university {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .date{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: gray;
+    font-size: 15px;
+  }
+  .hr-education {
+    border: 0.1px solid rgb(191, 191, 191);
+    margin-bottom: 30px;
+  }
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+
+  .education {
+    width: 1400px;
+    margin: 0 100px 0;
+  }
+
+  .title-education {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .university{
+    margin-left: 100px;
+    width: 1100px;
+  }
+
+  .name-university {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .path-university1 {
+    font-size: 25px;
+  }
+
+  .description-university {
+    font-size: 25px;
+    font-weight: 500;
+    width: 1100px;
+  }
+  .date{
+    right: 0px;
+    font-size: 25px;
+  } 
+
+  .hr-education {
+    border: 0.5px solid rgb(191, 191, 191);
+    margin-bottom: 20px;
+  }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+
+  .education {
+    margin: 0 50px 0;
+  }
+
+  .title-education {
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+  .university{
+    margin-left: 100px;
+    width: 1000px;
+  }
+
+  .name-university {
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+  .path-university1 {
+    font-size: 60px;
+  }
+
+  .description-university {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .date{
+    right: 0px;
+    font-size: 35px;
+  } 
+
+  .hr-education {
+    border: 0.5px solid rgb(191, 191, 191);
+    margin-bottom: 20px;
+  }
+}

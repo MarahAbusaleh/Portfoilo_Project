@@ -1,0 +1,168 @@
+.About-me {
+    display: grid;
+    grid-template-areas: "container-content my-image";
+    margin: 0 100px;
+    padding-top: 150px;
+}
+.About-me .title {
+    font-weight: bold;
+    color: #643843;
+    font-size: 65px;
+    margin: 40px 0;
+}
+
+.About-me .my-image {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.About-me .my-image img {
+    width: 28vw;
+    max-width: 450px;
+    height: 28vw;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: 50%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.my-image:hover img {
+    transform: scale(1.2);
+  }
+
+.About-me .description {
+    font-weight: 400;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #643843;
+    line-height: 1.4;
+    max-width: 50rem;
+}
+.full{
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    margin-top: 50px;
+}
+.buttons a {
+    padding: 12px 20px;
+    background-color: #9F6473;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 450;
+    text-align: center;
+    font-size: 18px;
+}
+.buttons a:hover {
+    color: #9F6473;
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid #9F6473;
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px) {
+    .About-me {
+        width: 1400px;
+        margin: 0 40px;
+        padding-top: 100px;
+      }
+    
+      .About-me .title {
+        margin: 0;
+        font-size: 60px;
+        margin-left: 50px;
+        margin-top: 100px;
+      }
+      .About-me .description {
+        font-size: 35px;
+        margin-left: 50px;
+        max-width: 250;
+      }
+      .full{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+      .About-me .my-image img {
+        margin-right: 90px;
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+      }
+    
+      .buttons {
+        margin-top: 35px;
+        margin-left: 50px;
+      }
+      .buttons a {
+        font-size: 30px;
+      }
+    
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+   
+    .About-me {
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 70px;
+        width: 1250px;
+        height: 2500px;
+      }
+    
+      .About-me .title {
+        font-size: 100px;
+        margin-top: 250px;
+        text-align: center;
+      }
+      .About-me .description {
+        font-size: 60px;
+        max-width: 100%;
+        text-align: center;
+      }
+      .full{
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .About-me .my-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+      }
+      .About-me .my-image img {
+        width: 1000px;
+        height: 1000px;
+        max-height: 100%;
+        max-width: 100%;
+ 
+      }
+    
+      .buttons {
+        position: absolute;
+        bottom: 0px;
+        margin: 0px;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 50px;
+        padding-right: 180px;
+      }
+      .buttons a {
+        font-weight: bold;
+        font-size: 45px;
+        height: 100px;
+        width: 300px;
+      }
+
+}

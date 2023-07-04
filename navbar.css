@@ -1,0 +1,123 @@
+.nb {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.Logo{
+    width: 130px;
+    height: 60px;  
+    margin-left: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-custom{
+    background-color: #643843;
+}
+
+div .dropdown-menu a{
+    color: gray;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vw;
+    color: #E6E6E6;
+}
+.nav-item {
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-item a{
+    color:#E6E6E6;
+}
+
+.nav-item:hover{
+    background-color: #b6b4b4;
+}
+.nav-item a:hover {
+    color: #643843;
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px) {
+
+    .nb{
+        width: 100%;
+    }
+    .navbar-toggler-icon{
+        margin-top: 30px;
+        font-size: 50px;
+        
+    }
+
+    .nav-menu{
+        font-size: 25px;
+        flex-direction: column;
+    }
+    .Logo{
+        width: 200px;
+        height: 80px;  
+        margin-left: 50px;
+    }
+    
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+    .navbar{
+        height: 200px;        
+    }
+    .Logo{
+        width: 300px;
+        height: 120px;  
+        margin-left: 50px;
+    }
+    .navbar-toggler-icon{
+        margin-top: 30px;
+        font-size: 80px;
+    }
+    
+    .nav-menu{
+        position: fixed;
+        font-size: 50px;
+        background-color: #643843;
+        gap: 0px;
+        left: 0px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;        
+        transition: 0.3s;
+    }
+
+    .dropdown-menu{
+        width: 350px;
+        height: 330px;
+    }
+    div .dropdown-menu a{
+        font-size: 50px;
+    }
+    
+
+    /*.nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }*/
+    
+    
+
+}
