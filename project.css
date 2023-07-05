@@ -97,7 +97,7 @@
 @media screen and (min-width: 461px)  and (max-width: 768px){
   .projects {
     width: 1400px;
-    margin: 0 100px 0;
+    margin: 0 150px 0;
   }
   .projects .title-projects {
     font-size: 50px;

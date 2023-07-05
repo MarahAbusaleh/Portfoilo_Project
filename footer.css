@@ -74,9 +74,12 @@
 
 /*********** Tablet ***********/
 @media screen and (min-width: 461px)  and (max-width: 768px){
+    footer{
+        width: 100%;
+    }
     .contact{
         margin-top: 120px;
-        width: 1500px;
+        width: 1600px;
         height: fit-content;
     }
 
