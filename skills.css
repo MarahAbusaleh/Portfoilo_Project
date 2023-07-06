@@ -130,8 +130,7 @@
         display: flex;
         flex-direction: column;
     }
-    .title-skills span {
-        
+    .title-skills span {        
         font-size: 60px;
         text-align: center;
     }

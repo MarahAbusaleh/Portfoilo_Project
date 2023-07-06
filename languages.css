@@ -29,7 +29,7 @@
     transition: width 2s;
     transition-timing-function: ease-in-out;
   }
-  .out:hover .in, .out:active .in{
+  .out:hover .in{
     
     width: 100%;
   }
@@ -46,6 +46,7 @@
     
     width: 65%;
   }
+  
 
 /*********** Tablet ***********/
 @media screen and (min-width: 461px)  and (max-width: 768px){
