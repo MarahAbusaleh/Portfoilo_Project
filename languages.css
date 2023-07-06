@@ -26,21 +26,38 @@
     height: 20px;
     background-color: #9F6473;
     width: 0.1px;
-    transition: width 2s;
-    transition-timing-function: ease-in-out;
+    animation-name: lang_rangea;
+    animation-duration: 2s;animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
-  .out:hover .in{
-    
-    width: 100%;
-  }
+  @keyframes lang_rangea {
+    from{
+      width: 0.1px;
 
+    }
+    to{
+      width: 100%;
+
+    }
+  }
   .ine{
     height: 20px;
     background-color: #9F6473;
     width: 0.1px;
-    transition: width 2s;
+    animation-name: lang_rangee;
+    animation-duration: 2s;animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes lang_rangee {
+    from{
+      width: 0.1px;
+
+    }
+    to{
+      width: 75%;
+
+    }
     
-    transition-timing-function: ease-in-out;
   }
   .out:hover .ine{
     
