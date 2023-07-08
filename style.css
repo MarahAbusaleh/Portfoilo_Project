@@ -1,0 +1,1289 @@
+/****************************************** Navbar ******************************************/
+.nb {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.Logo{
+    width: 130px;
+    height: 60px;  
+    margin-left: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-custom{
+    background-color: #643843;
+}
+
+div .dropdown-menu a{
+    color: gray;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vw;
+    color: #E6E6E6;
+}
+.nav-item {
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-item a{
+    color:#E6E6E6;
+}
+
+.nav-item:hover{
+    background-color: #b6b4b4;
+}
+.nav-item a:hover {
+    color: #643843;
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px) {
+
+    .nb{
+        width: 100%;
+    }
+    .navbar-toggler-icon{
+        margin-top: 30px;
+        font-size: 50px;
+        
+    }
+
+    .nav-menu{
+        font-size: 25px;
+        flex-direction: column;
+    }
+    .Logo{
+        width: 200px;
+        height: 80px;  
+        margin-left: 50px;
+    }
+    
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+    .navbar{
+        height: 200px;        
+    }
+    .Logo{
+        width: 300px;
+        height: 120px;  
+        margin-left: 50px;
+    }
+    .navbar-toggler-icon{
+        margin-top: 30px;
+        font-size: 80px;
+    }
+    
+    .nav-menu{
+        position: fixed;
+        font-size: 50px;
+        background-color: #643843;
+        gap: 0px;
+        left: 0px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;        
+        transition: 0.3s;
+    }
+
+    .dropdown-menu{
+        width: 350px;
+        height: 330px;
+    }
+    div .dropdown-menu a{
+        font-size: 50px;
+    }
+
+}
+
+/****************************************** Header ******************************************/
+
+.About-me {
+    display: grid;
+    grid-template-areas: "container-content my-image";
+    margin: 0 100px;
+    padding-top: 150px;
+}
+.About-me .title {
+    font-weight: bold;
+    color: #643843;
+    font-size: 65px;
+    margin: 40px 0;
+}
+
+.About-me .my-image {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.About-me .my-image img {
+    width: 28vw;
+    max-width: 450px;
+    height: 28vw;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: 50%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.my-image:hover img {
+    transform: scale(1.2);
+  }
+
+.About-me .description {
+    font-weight: 400;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #643843;
+    line-height: 1.4;
+    max-width: 50rem;
+}
+.full{
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    margin-top: 50px;
+}
+.buttons a {
+    padding: 12px 20px;
+    background-color: #9F6473;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 450;
+    text-align: center;
+    font-size: 18px;
+}
+.buttons a:hover {
+    color: #9F6473;
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid #9F6473;
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px) {
+    .About-me {
+        width: 1400px;
+        margin: 0 100px;
+        padding-top: 100px;
+      }
+    
+      .About-me .title {
+        margin: 0;
+        font-size: 60px;
+        margin-left: 50px;
+        margin-top: 100px;
+      }
+      .About-me .description {
+        font-size: 35px;
+        margin-left: 50px;
+        max-width: 250;
+      }
+      .full{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+      .About-me .my-image img {
+        margin-right: 90px;
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+      }
+    
+      .buttons {
+        margin-top: 35px;
+        margin-left: 50px;
+      }
+      .buttons a {
+        font-size: 30px;
+      }
+    
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+   
+    .About-me {
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 70px;
+        width: 1250px;
+        height: 2500px;
+      }
+    
+      .About-me .title {
+        font-size: 100px;
+        margin-top: 250px;
+        text-align: center;
+      }
+      .About-me .description {
+        font-size: 60px;
+        max-width: 100%;
+        text-align: center;
+      }
+      .full{
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .About-me .my-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+      }
+      .About-me .my-image img {
+        width: 1000px;
+        height: 1000px;
+        max-height: 100%;
+        max-width: 100%;
+ 
+      }
+    
+      .buttons {
+        position: absolute;
+        bottom: 0px;
+        margin: 0px;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 50px;
+        padding-right: 180px;
+      }
+      .buttons a {
+        font-weight: bold;
+        font-size: 45px;
+        height: 100px;
+        width: 300px;
+      }
+
+}
+
+
+/****************************************** Education ******************************************/
+
+.education {
+    margin: 0 100px 0;
+    padding: 120px 0 0;
+  }
+  
+  .title-education {
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+  .university{
+    width: 1330px;
+    margin-left: 50px;
+  }
+  
+  .name-university {
+    font-size: 25px;
+    color: #553539;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+
+  .path-university1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8A606A;
+  }
+  
+  .description-university {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .date{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: gray;
+    font-size: 15px;
+  }
+  .hr-education {
+    border: 0.1px solid rgb(191, 191, 191);
+    margin-bottom: 30px;
+  }
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+
+  .education {
+    width: 1400px;
+    margin: 0 150px 0;
+  }
+
+  .title-education {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .university{
+    margin-left: 100px;
+    width: 1100px;
+  }
+
+  .name-university {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .path-university1 {
+    font-size: 25px;
+  }
+
+  .description-university {
+    font-size: 25px;
+    font-weight: 500;
+    width: 1100px;
+  }
+  .date{
+    right: 0px;
+    font-size: 25px;
+  } 
+
+  .hr-education {
+    border: 0.5px solid rgb(191, 191, 191);
+    margin-bottom: 20px;
+  }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+
+  .education {
+    margin: 0 50px 0;
+  }
+
+  .title-education {
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+  .university{
+    margin-left: 100px;
+    width: 1000px;
+  }
+
+  .name-university {
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+  .path-university1 {
+    font-size: 60px;
+  }
+
+  .description-university {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .date{
+    right: 0px;
+    font-size: 35px;
+  } 
+
+  .hr-education {
+    border: 0.5px solid rgb(191, 191, 191);
+    margin-bottom: 20px;
+  }
+}
+
+/****************************************** Skills ******************************************/
+
+.skills .title {
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+}
+.skills {
+    display: grid;
+    margin: 120px 100px 0;
+    grid-template-areas: "container-skills-left container-skills-right";
+    gap: 80px;
+}
+.container-skills-right {
+    display: flex;
+    gap: 150px;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+.container-skills-left {
+    margin-top: -100px;
+}
+.container-skills-left img {
+    margin-left: 20px;
+    margin-top: -50px;
+    width: 500px;
+}
+.title-skills{
+    text-align: center;
+}
+.title-skills span{
+    text-align: center;
+    font-size: 30px;
+    color: #9F6473;
+    text-decoration: underline;
+}
+.list-soft-skills-L{
+    text-decoration: none;
+    color: black;
+}
+.list-icons-skills {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.list-icons-skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-technical p{
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.soft{
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 22px;
+    color: #553539;          
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+    .skills {
+        margin: 120px 150px 0;
+        width: 1200px;
+        gap: 0px;
+    }
+    .skills .title{
+        font-size: 50px;
+    }
+    .container-skills-right{
+        margin-right: -120px;
+        margin-top: 140px;
+    }
+    .container-skills-left img {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .title-skills  span{
+        font-size: 40px;
+        text-align: center;
+    }
+    .list-icons-skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+    }
+    .icons-technical p {
+        font-size: 20px;
+    }
+    .icons-technical i {
+        font-size: 40px;
+    }
+    .soft{      
+        font-size: 20px;
+    }
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+    .skills {
+        margin: 120px 50px 0;
+        display: flex;
+        flex-direction: column;
+        width: 1300px;
+    }
+    .skills .title{
+        font-size: 90px;
+    }
+    .container-skills-left img {
+        width: 100%;
+        margin-bottom: -200px;
+    }
+    .container-skills-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-skills span {        
+        font-size: 60px;
+        text-align: center;
+    }
+    .list-icons-skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+    }
+    .icons-technical p {
+        font-size: 50px;
+    }
+    .icons-technical i {
+        font-size: 90px;
+    }
+    .soft{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px ;     
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;       
+    }
+}
+
+/****************************************** Projects ******************************************/
+
+.projects {
+    margin: 0 100px 0;
+    margin-top: -50px;
+    padding: 60px 0 0;
+  }
+  .title-projects{
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+
+  
+  .container-project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    gap: 35px;
+  }
+  
+  .card-project {
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    background-color: white
+  }
+  .card-project img {
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .card-project figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-project:hover figure img {
+    transform: scale(1.1);
+  }
+  
+  .description-project {
+    padding: 20px;
+  }
+  
+  .description-project h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #643843;
+    font-weight: bold;
+  }
+  
+  .description-project p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  
+  .links{
+    position: relative;
+  }
+ 
+  .github {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+  }
+  
+  .github img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .github a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-right: 10px;
+    color: #643843;
+  }
+
+  .github a:hover{
+    color: #9F6473;
+  }
+
+ 
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+  .projects {
+    width: 1400px;
+    margin: 0 150px 0;
+  }
+  .projects .title-projects {
+    font-size: 50px;
+  }
+  .container-project{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    max-width: 2000px;
+    margin-right: 120px;
+  }
+  .card-project{
+    max-width: 100%;
+    width: 310px;
+  }
+
+}  
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+  .projects {
+    margin: 0 50px 0;
+    width: 100%;
+  }
+  .projects .title-projects {
+    font-size: 90px;
+  }
+
+  .container-project{
+    margin-left: 150px;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 900px;
+  
+  }
+
+  .card-project{
+    max-width: 100%;
+    height: 1000px;
+  }
+  .card-project img {
+    max-width: 100%;
+    height: 700px;
+  }
+  
+  .card-project figure img {
+    height: 500px;
+  }
+  
+  .description-project h6 {
+    font-size: 60px;
+  }
+  
+  .description-project p {
+    padding-top: 90px;
+    font-size: 40px;
+  }
+  
+  .github img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .github a {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+}
+
+
+/****************************************** Certificates ******************************************/
+
+.certificates {
+    margin: 0 100px 0;
+    margin-top: -30px;
+    padding: 60px 0 0;
+  }
+  .title-certificates{
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+
+  .container-certificates {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .card-certificates {
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    background-color: white;
+  }
+  .card-certificates img {
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .card-certificates figure img {
+    width: 350px;
+    height: 450px;
+  }
+  .title-skill {
+    text-align: center;
+    font-size: 30px;
+    color: #9F6473;
+    text-decoration: underline;
+}
+    
+  .description-certificates {
+    padding: 20px;
+  }
+
+  .description-certificates .title-skill:hover {
+    color: orange;
+  }
+  
+  .description-certificates p {
+    max-width: 450px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+
+  .certificates {
+    width: 1400px;
+    margin: 0 150px 0;
+  }
+
+  .title-certificates {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .card-certificates {
+    margin-top: 50px;
+    margin-left: -80px;
+  }
+  
+  .card-certificates figure img {
+    width: 400px;
+  }
+  .title-skill:hover{
+    background-color: #E7CBCB;
+
+  }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+
+  .certificates {
+    margin: 0 50px 0;
+  }
+  .title-certificates{
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+
+  .card-certificates {
+    flex-direction: column;
+    margin-left: 190px;
+  }
+
+  .card-certificates figure img {
+    width: 800px;
+    height: 980px;
+  }
+
+  .description-certificates p {
+    max-width: 700px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 40px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+}
+
+/****************************************** Languages ******************************************/
+
+.languages {
+    margin: 0 100px 0;
+    margin-top: -30px;
+    padding: 60px 0 0;
+  }
+  .title-languages{
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+
+  .list-languages{
+    display: flex;
+    flex-direction: column;
+    color: #553539; 
+    font-size: 25px;
+    margin-left: 150px;
+  }
+  .out{
+    height: 20px;
+    width: 513px;
+    background-color: white;
+  }
+  .in{
+    height: 20px;
+    background-color: #9F6473;
+    width: 0.1px;
+    animation-name: lang_rangea;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes lang_rangea {
+    from{
+      width: 0.1px;
+
+    }
+    to{
+      width: 95%;
+
+    }
+  }
+  .ine{
+    height: 20px;
+    background-color: #9F6473;
+    width: 0.1px;
+    animation-name: lang_rangee;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes lang_rangee {
+    from{
+      width: 0.1px;
+
+    }
+    to{
+      width: 75%;
+
+    }
+    
+  }
+  .out:hover .ine{
+    
+    width: 65%;
+  }
+  
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+
+  .languages {
+    margin: 0 150px 0;
+    width: 1400px;
+  }
+  .title-languages{
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .list-languages{
+    font-size: 40px;
+  }
+
+  .list-languages span{
+    font-size: 30px;
+  }
+  .out{
+    width: 900px;
+  }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+
+  .languages {
+    margin: 0 50px 0;
+    width: 1500px;
+  }
+  .title-languages{
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+
+  .list-languages{
+    font-size: 70px;
+  }
+
+  .list-languages span{
+    font-size: 45px;
+  }
+
+  .out{
+    height: 40px;
+    width: 900px;
+  }
+
+  .in{
+    height: 40px;
+  }
+
+  .ine{
+    height: 40px;
+  }
+
+}
+  
+/****************************************** References ******************************************/
+
+.references {
+    display: grid;
+    grid-template-areas: "left right";
+    margin: 0 100px 0;
+    margin-bottom: 150px;
+    margin-top: -30px;
+    padding: 60px 0 0;
+  }
+  .title-references{
+    font-weight: bold;
+    color: #643843;
+    font-size: 40px;
+    margin: 40px 0;
+  }
+  .subtitle{
+    margin-left: 62px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #643843;
+  }
+  .list{
+    display: flex;
+    gap: 30px;
+  }
+
+
+  .list-references{
+    display: flex;
+    flex-direction: column;
+    color: #553539; 
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  
+  .list-references li{
+    list-style: none;
+  }
+
+  .list-references img{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+  }
+
+  .right{
+    margin-top: 120px;
+    margin-right: 40px;
+  }
+  .right img{
+    width: 250px;
+    height: 250px;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .right:hover img {
+    transform: scale(1.2);
+  }
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+  
+  .references {
+    width: 1400px;
+    margin: 0 150px 0;
+    gap: 0px;
+  }
+  .title-references{
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .subtitle{
+    font-size: 40px;
+
+  }
+
+  .left{
+    width: 700px;
+  }
+
+  .list-references{
+    font-size: 30px;
+  }
+
+  .list i {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+  .right img{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    
+  }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+  .references {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0;
+    width: 1200px;
+  }
+
+  .title-references{
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle{
+    font-size: 70px;
+
+  }
+  
+  .list-references{
+    font-size: 60px;
+  }
+
+  .list i {
+    margin-top: 25px;
+    font-size: 50px;
+  }
+  .right img{
+    width: 600px;
+    height: 600px;
+    margin-left: 270px;
+  }
+
+}
+
+/****************************************** Footer ******************************************/
+
+.contact{
+    width: 100%;
+    height: 300px;
+    background-color: #643843;
+}
+
+.footer{
+    display: grid;
+    margin-top: 15px;
+    grid-template-areas: "leftfooter rightfooter";
+}
+.contact .Logo{
+    margin-top: 10px;
+}
+.list-footer li{
+    list-style: none;
+}
+
+.list-footer{
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.list-footer img{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+}
+.listfooter{
+    display: flex;
+    gap: px;
+}
+
+.rightfooter{
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 680px;
+}
+.rightfooter span{
+    width: 480px;
+}
+
+.hr-footer {
+    border: 0.01px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+    margin-right: 200px;
+}
+
+.bx {
+    font-size: 30px;
+    color: white;
+}
+
+.rightfooter .icon{
+    display: flex;
+    gap: 28px;
+}
+
+.listfooter span{
+    margin-right: 20px;
+}
+
+#copy{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*********** Tablet ***********/
+@media screen and (min-width: 461px)  and (max-width: 768px){
+    footer{
+        width: 100%;
+    }
+    .contact{
+        margin-top: 120px;
+        width: 1600px;
+        height: fit-content;
+    }
+
+}
+
+/*********** Mobaile ***********/
+@media screen and (max-width: 460px){
+    .contact{
+        margin-top: 120px;
+        width: 1300px;
+        height: 100%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .Logo{
+        margin-top: 20px;
+        margin-left: 450px;
+    }
+    
+    .list-footer{
+        font-size: 35px;
+        text-align: center;
+        width: fit-content;
+        margin-left: 320px;
+    }
+    .bx {
+        font-size: 60px;
+        color: white;
+    }
+
+    .listfooter span{
+        font-size: 60px;
+        margin-right: 20px;
+
+    }
+
+    .rightfooter{
+            margin-left: 340px;
+    }
+    .rightfooter span{
+        margin-top: 70px;
+        font-size: 35px;
+        margin-right: 20px;
+        width: 900px;
+    }
+
+    .hr-footer {
+        margin-right: 220px;
+    }
+
+    .rightfooter .icon{
+        gap: 90px;
+        margin-bottom: 50px;
+    }
+
+    #copy{
+        font-size: 30px;
+    }
+    
+
+}
+
+/****************************************** TheEnd ******************************************/
