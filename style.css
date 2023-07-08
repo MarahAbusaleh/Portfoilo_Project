@@ -1,3 +1,12 @@
+
+#all{
+  background-color: #E7CBCB;
+}
+
+html{
+  width: 100%;
+  scroll-behavior: smooth;
+}
 /****************************************** Navbar ******************************************/
 .nb {
     position: fixed;
